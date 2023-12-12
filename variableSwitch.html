@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var m = 60;
+        console.log(m);
+        let n="Moon";
+        console.log(n);
+        let name= 'moon';
+        let tem = `${name} is my name`;
+
+        console.log(tem);
+        console.log(name + "is my name");
+        // working with string 
+        let str = "This is a string";
+        console.log(str);
+        console.log(str.length);
+        let position = str.indexOf("is");
+        console.log(position);
+        console.log(str.lastIndexOf("is"));
+        console.log(str.substring(1,7));
+        console.log(str.replace('string','moon'));
+
+        console.log(str.toUpperCase());
+        console.log(str.concat(' bad luck'));
+        let str1 = "   kdkdk kkd   dkjd   ";
+        console.log(str1.trim());
+        console.log(str.charAt(2));
+        //working with switch
+        let c = 4;
+        switch(c)
+        {
+           case 4:console.log("My name is Moon");
+           break;
+           case 5:console.log("nothing");
+           break;
+           default:console.log("Hellow world");
+
+        }
+
+        //object
+         let employ = {
+            name: "moon",
+            salary: 23,
+
+
+
+         }
+         //using array
+         console.log(employ);
+         let name1 =[34,55,'moon'];
+         console.log(name1);
+
+         //array declarecion
+         let ml = Array(23);
+         console.log(ml);
+          let m2 = new Array(34);
+          console.log(m2);
+          m2.push(22);
+          console.log(m2);
+        //   foreach array 
+        
+        name1.forEach(element =>
+        {
+
+            console.log("all values are "+ element);
+        });
+
+        name1.forEach(function f(element){
+           console.log(element);
+        });
+
+        // forof loop
+        for ( i of name1) {
+            console.log(i);
+        }
+
+        //forin loop
+    for(k in name1)
+    {
+        console.log(k);
+    }
+
+    // using in object only forin
+     for( i in employ)
+     {
+        console.log(i + ":"+ employ[i]);
+     }
+
+    </script>
+</head>
+<body>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae minus magnam incidunt nam facilis eos tempora, quod maiores suscipit excepturi praesentium molestiae labore cumque reiciendis, architecto fuga soluta, sed veniam. Nemo esse tenetur enim eos quod ducimus beatae similique totam.</p>
+    </div>
+</body>
+</html>

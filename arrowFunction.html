@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+<body>
+    <div class="container">
+
+    </div>
+    <script>
+        // function greet(){
+        //     console.log("Good Morning");
+        // }
+        // greet();
+
+
+        // greet =() =>{
+        //     console.log("Sortcut of Greetind bro");
+        // };
+        // greet();
+
+
+        // setInterval(() => {
+        //     console.log("we are using a function by using arrow in the build in setInetrval function");
+        // },3000);
+
+       
+        
+        // let half = a =>{
+        //     return a/2;
+        // };
+        // console.log(half(20));
+
+
+        
+        // let half = a =>{
+        //     return a/2;
+        // };
+        // console.log(half(20));
+
+
+        // let half = a => a/2;
+        // console.log(half(20));
+
+        // let obj={
+        //     greeting : "good morning",
+        //     names: ['moon','raya','sovon'],
+        //      speak (){
+        //         console.log(this.greeting);
+        //     }
+        // }
+        // obj.speak();
+
+        // let obj1={
+        //     greeting : "good morning",
+        //     names: ['moon','raya','sovon'],
+        //      speak (){
+        //         this.names.forEach(element=> {
+        //             console.log(this.greeting + " "+ element );
+        //         });
+        //     }
+        // }
+        // obj1.speak();
+
+        let obj1={
+            greeting : "good morning",
+            names: ['moon','raya','sovon'],
+             speak (){
+                this.names.forEach(function f(element){
+                    console.log(this.greeting + " "+ element );
+                });
+            }
+        }
+        obj1.speak();
+
+
+    </script>
+</body>
+</html>

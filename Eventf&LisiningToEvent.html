@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #pera{
+            border: 2px solid red;
+            border-radius: 15px;
+            text-align: center;
+            background-color: gray;
+        }
+        #btn{
+            background-color: red;
+            color: white;
+            width: 12%;
+            display: block;
+            margin: auto;
+            height: 20px;
+            text-align: center;
+            padding: 5px 10px;
+            border: 2px solid black;
+            border-radius: 10px;
+            cursor:pointer;
+
+        }
+    </style>
+</head>
+<body>
+    <!-- Browser Events are  -->
+    <!-- click
+    contextmenu
+    mouseover/mouseout 
+    mousedown/mouseup 
+    mousemove
+    
+    submit
+    focus
+
+    DOMContentLoded
+
+    transitionend -->
+    <div class="container">
+        <h1>Working with pera</h1>
+        <p id="pera">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit repudiandae magni amet itaque sed, porro quaerat fugit quam laudantium, quos provident temporibus! Iusto vero eius perspiciatis voluptates qui dolores debitis exercitationem error saepe sequi! Rerum earum, mollitia adipisci recusandae alias ipsum libero veritatis facere repellendus suscipit ut itaque? Ipsum, maxime inventore minima dolores fugiat perferendis corporis odio numquam, cupiditate molestiae deleniti autem accusamus voluptatibus, ipsam deserunt molestias quos! Commodi, odio?
+        </p>
+    </div>
+    <div id="btn" onclick="toggleHide()">Show/Hide</div>
+    <script>
+    //  let pera = document.getElementById("pera");
+     pera.addEventListener('mouseover',function run(){
+        alert("Mouse is inside");
+     })
+     pera.addEventListener('mouseout',function run(){
+        alert("Mouse is outside");
+     })
+    function toggleHide(){
+        // let btn = document.getElementById("btn");
+        // let pera = document.getElementById("pera");
+        if(pera.style.display != 'none')
+        {
+            pera.style.display = "none";
+        }
+        else
+        pera.style.display = "block";
+
+    }
+ </script>
+</body>
+</html>

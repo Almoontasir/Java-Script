@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main" class="container">
+        <ul class="nav">
+            <li>Home</li>
+            <li>Contact Us</li>
+            <li>About Us</li>
+            <li>Services</li>
+        </ul>
+    </div>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, repellat.</p>
+    </div>
+    <script>
+        let main_id = document.getElementById("main");
+        console.log(main_id);
+        let m = document.getElementsByClassName("container");
+        console.log(m);
+        console.log(document.querySelector(".nav"));
+        console.log(document.querySelector(".nav>li"));
+        console.log(document.querySelector("#main"));
+    </script>
+</body>
+</html>
